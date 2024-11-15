@@ -1,6 +1,6 @@
 {
     "name": "com.lrtools.utility",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "displayName": "Utility",
     "description": "A couple of class, methods, serialization and so on to help and make development more lisible, easier and faster.",
     "unity": "2022.3",

@@ -1,3 +1,9 @@
+## [0.4.0] - 15/11/2024
+### Bye bye serialization
+- Remove serializable dictionary
+- Add readonly attributes and drawer
+- Fix lazy singleton file path
+
 ## [0.3.0] - 15/11/2024
 ### Serialization incoming
 - Add serializable dictionary named ```SDictionary<T,K>```
