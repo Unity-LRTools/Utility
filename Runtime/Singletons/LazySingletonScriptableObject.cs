@@ -1,13 +1,11 @@
-using System;
 using System.IO;
 using UnityEditor;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class LazySingletonScriptableObject<T> : ScriptableObject where T : ScriptableObject
 {
 	public static readonly string LOAD_PATH = "Assets/Resources/";
-	public static readonly string FILE_PATH = Path.Combine(LOAD_PATH, typeof(T).Name);
+	public static readonly string FILE_PATH = Path.Combine(LOAD_PATH, typeof(T).Name + ".asset");
 
 	public static T Instance
 	{
@@ -23,7 +21,7 @@ public class LazySingletonScriptableObject<T> : ScriptableObject where T : Scrip
 						Directory.CreateDirectory(LOAD_PATH);
 
 					T bufferInstance = CreateInstance<T>();
-					AssetDatabase.CreateAsset(bufferInstance, FILE_PATH + ".asset");
+					AssetDatabase.CreateAsset(bufferInstance, FILE_PATH);
 					AssetDatabase.SaveAssets();
 					instance = bufferInstance;
 				}
