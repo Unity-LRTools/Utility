@@ -1,0 +1,17 @@
+{
+    "name": "com.lrtools.utility",
+    "version": "0.1.0",
+    "displayName": "Utility",
+    "description": "A couple of class, methods, serialization and so on to help and make development more lisible, easier and faster.",
+    "unity": "2022.3",
+    "licensesUrl": "https://opensource.org/license/mit",
+    "keywords": [
+        "LRTools",
+        "utility"
+      ],
+      "author": {
+        "name": "Lucas Rossignol",
+        "email": "pro.lucasrossignol@gmail.com"
+      }
+  }
+  
