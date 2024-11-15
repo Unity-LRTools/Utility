@@ -1,3 +1,16 @@
 {
-	"name": "LRT.Utility.Editor"
+    "name": "LRT.Utility.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:65fdd206ccbdc7f4e8a8448c4671ab26"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
