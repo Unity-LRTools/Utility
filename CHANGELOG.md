@@ -1,3 +1,7 @@
+## [0.3.0] - 15/11/2024
+### Serialization incoming
+- Add serializable dictionary named ```SDictionary<T,K>```
+
 ## [0.2.0] - 15/11/2024
 ### Add rect and drawing function utility
 - Add functions to draw cross and border on a rect
