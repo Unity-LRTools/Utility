@@ -1,3 +1,8 @@
+## [0.5.0] - 15/11/2024
+### Custom style
+- Add 'CustomGUIStyle' to override style easier
+- Implemented for label
+
 ## [0.4.0] - 15/11/2024
 ### Bye bye serialization
 - Remove serializable dictionary
