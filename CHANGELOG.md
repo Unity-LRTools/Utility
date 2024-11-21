@@ -1,3 +1,7 @@
+## [0.5.1] - 21/11/2024
+### Custom style
+- Implemented custom styling for button
+
 ## [0.5.0] - 15/11/2024
 ### Custom style
 - Add 'CustomGUIStyle' to override style easier
