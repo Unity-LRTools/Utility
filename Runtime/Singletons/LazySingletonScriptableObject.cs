@@ -6,13 +6,14 @@ public class LazySingletonScriptableObject<T> : ScriptableObject where T : Scrip
 {
 	public static readonly string LOAD_PATH = "Assets/Resources/";
 	public static readonly string FILE_PATH = Path.Combine(LOAD_PATH, typeof(T).Name + ".asset");
+	public static readonly string RUNTIME_FILE_PATH = typeof(T).Name;
 
 	public static T Instance
 	{
 		get
 		{
 #if UNITY_EDITOR
-			if (instance == null)
+			if (!Application.isPlaying && instance == null)
 			{
 				instance = AssetDatabase.LoadAssetAtPath<T>(FILE_PATH);
 				if (instance == null)
@@ -26,9 +27,13 @@ public class LazySingletonScriptableObject<T> : ScriptableObject where T : Scrip
 					instance = bufferInstance;
 				}
 			}
+			else if(instance == null)
+			{
+				instance = Resources.Load<T>(RUNTIME_FILE_PATH);
+			}
 #else
 			if (instance == null)
-				instance = Resources.Load<T>(FILE_PATH);
+				instance = Resources.Load<T>(RUNTIME_FILE_PATH);
 #endif
 			return instance;
 		}
