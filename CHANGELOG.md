@@ -1,3 +1,7 @@
+## [0.5.2] - 26/11/2024
+### Fix lazy singleton
+- Fix error related to path in lazy singleton
+
 ## [0.5.1] - 21/11/2024
 ### Custom style
 - Implemented custom styling for button
