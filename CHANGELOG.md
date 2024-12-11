@@ -1,3 +1,7 @@
+## [0.6.0] - 26/11/2024
+### Fix lazy singleton
+- Add tags class, drawer and wizard
+
 ## [0.5.2] - 26/11/2024
 ### Fix lazy singleton
 - Fix error related to path in lazy singleton
