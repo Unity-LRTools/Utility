@@ -12,12 +12,12 @@ namespace LRT.Smith.Statistics.Editor
 
 		public static void CreateWizard(List<string> tags)
 		{
-			TagsWizard window = GetWindow<TagsWizard>("Statistic Tags");
+			TagsWizard window = GetWindow<TagsWizard>("Tags");
 			window.tags = tags;
 
 			while (tags.Count() < 32)
 			{
-				tags.Add("");
+				tags.Add(string.Empty);
 			}
 		}
 

@@ -25,7 +25,6 @@ namespace LRT.Smith.Statistics.Editor
 		public abstract List<string> GetOptions();
 	}
 
-
 	public static class TagsLayout
 	{
 		public static Tags TagsFlagField(string label, Tags tags, List<string> origin) => TagsFlagField(new GUIContent(label), tags, origin);

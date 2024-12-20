@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace LRT.Utility
 {
+	[Serializable]
 	public abstract class Tags : IEnumerable<string>
 	{
 		public int mask;
