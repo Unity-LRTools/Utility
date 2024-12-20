@@ -1,3 +1,8 @@
+## [0.7.0] - 20/12/2024
+### Fix lazy singleton
+- Add editor list drawer
+
+
 ## [0.6.0] - 26/11/2024
 ### Fix lazy singleton
 - Add tags class, drawer and wizard
